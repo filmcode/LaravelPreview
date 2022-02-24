@@ -26,8 +26,9 @@ class CreateProductosTable extends Migration
             $table->string('diasPiso');
             $table->decimal('costo');
             $table->string('estatus');
-            $table->string('observaciones');
+            $table->string('observaciones')->nullable();
             $table->string('apartado');
+            $table->string('autorizado')->nullable();
             $table->timestamps();
         });
     }

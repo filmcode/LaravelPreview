@@ -20,7 +20,6 @@ class Producto extends Model
         'costo', 
         'estatus', 
         'observaciones', 
-        'apartado',
-        'autorizado'
+        'apartado'
     ];
 }

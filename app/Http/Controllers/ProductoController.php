@@ -49,7 +49,7 @@ class ProductoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'linea' => 'required', 'catalogo' => 'required', 'modelo' => 'required', 'serie' => 'required', 'color' => 'required', 'ubicacion' => 'required', 'diasPiso' => 'required', 'costo' => 'required', 'estatus' => ' ', 'observaciones' => ' ', 'apartado' => 'required', 'autorizado' => ' '
+            'linea' => 'required', 'catalogo' => 'required', 'modelo' => 'required', 'serie' => 'required', 'color' => 'required', 'ubicacion' => 'required', 'diasPiso' => 'required', 'costo' => 'required', 'estatus' => ' ', 'observaciones' => ' ', 'apartado' => 'required'
         ]);
         
         if ($request->file('files')) {
