@@ -40,6 +40,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::resource('productos', ProductoController::class);
     Route::resource('carros', CarroController::class);
     Route::resource('grafica', GraficaController::class);
+    Route::post('/ajaxGrafica', [GraficaController::class, 'ajaxGrafica']);
 });
 
 Auth::routes();
